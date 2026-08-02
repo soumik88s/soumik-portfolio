@@ -1,54 +1,129 @@
-# Soumik Chakraborty - Portfolio Website
+# 🚀 Soumik Chakraborty – Portfolio Website
 
-> Personal portfolio website of **Soumik Chakraborty**, Computer Science & Business Systems Undergraduate at Techno Main Salt Lake, Kolkata. Built with React, TypeScript, Tailwind CSS, Motion, and Express.
+A modern, responsive, and interactive personal portfolio website showcasing my projects, technical skills, certifications, education, and coding profiles.
 
----
+Built with **React**, **TypeScript**, **Vite**, and modern UI/UX principles, this portfolio highlights my journey as a Frontend Developer and aspiring Full Stack Developer.
 
-## 🌟 Key Features
+## 🌐 Live Demo
 
-- 💎 **Glassmorphism & Modern Design**: Dark/light theme support with sleek backdrop-blur cards, glowing radial accents, and custom typography.
-- ⚡ **Interactive Terminal & Typing Effect**: Dynamic cycling job titles and interactive code snippet.
-- 📊 **Animated Skill Cards & Progress Bars**: Filter skills by domain (Programming, Frontend, Backend, Databases, Core CS, Tools).
-- 📂 **Featured Projects Showcase**: Detailed cards for Online Scholarship Management System, DevConnect, and CGPA Calculator.
-- 🏆 **Achievements Timeline**: 2nd Place Innovation Coding Competition, 4★ HackerRank Problem Solving & SQL, 200+ Solved.
-- 🎓 **Education & CGPA Target Planner Modal**: Calculate semester SGPA and predict required grades for graduation.
-- 📜 **Certificate Preview Gallery**: Interactive modal previews with verified skills breakdown.
-- 📬 **Interactive Contact Form**: Real working backend endpoint (`/api/contact`) with validation and celebratory confetti.
-- 📄 **Resume Download Endpoint**: Server-generated downloadable resume file (`/api/resume/download`).
+> **Coming Soon** *(Update this after deploying on Vercel)*
+
+## 📸 Preview
+
+> Add screenshots of your portfolio here after deployment.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Features
 
-- **Frontend**: React 19, TypeScript, Tailwind CSS v4, Motion, Lucide Icons, Canvas Confetti
-- **Backend**: Node.js, Express.js (server.ts)
-- **Deployment**: Vercel / Cloud Run ready with esbuild bundling
+* 🎨 Modern and responsive design
+* 🌙 Dark mode interface
+* ⚡ Smooth animations and transitions
+* 💻 Interactive project showcase
+* 🛠 Technical skills with categorized sections
+* 🏆 Achievements and certifications
+* 🎓 Education timeline
+* 📬 Contact section
+* 📱 Mobile-friendly and responsive layout
 
 ---
 
-## 🚀 Local Setup & Development
+## 🛠 Tech Stack
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+### Frontend
 
-2. **Run Dev Server**:
-   ```bash
-   npm run dev
-   ```
+* React
+* TypeScript
+* Vite
+* CSS3
 
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+### Tools
 
-4. **Start Production Server**:
-   ```bash
-   npm start
-   ```
+* Git
+* GitHub
+* VS Code
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+├── sections/
+├── data/
+├── hooks/
+├── App.tsx
+├── main.tsx
+└── types.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/soumik88s/soumik-portfolio.git
+```
+
+### Navigate to the project
+
+```bash
+cd soumik-portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 👨‍💻 About Me
+
+I am a **Computer Science & Business Systems** undergraduate at **Techno Main Salt Lake**, passionate about building responsive web applications and solving real-world problems through technology.
+
+I enjoy working with modern web technologies such as React, TypeScript, JavaScript, Firebase, and MongoDB while continuously improving my software development and problem-solving skills.
+
+---
+
+## 📌 Featured Projects
+
+* 🚀 DevConnect
+* 📊 CGPA Calculator & Target Planner
+* 🎓 Online Scholarship Management System
+
+---
+
+## 📫 Connect With Me
+
+* **GitHub:** https://github.com/soumik88s
+* **LinkedIn:** *(Add your LinkedIn profile URL)*
+* **Email:** [soumikchakraborty88s@gmail.com](mailto:soumikchakraborty88s@gmail.com)
 
 ---
 
 ## 📄 License
-Apache 2.0 License - Created for Soumik Chakraborty.
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
