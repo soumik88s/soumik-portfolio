@@ -27,13 +27,13 @@ export const PERSONAL_INFO = {
   phone: "+91 8927156464",
   cgpa: "7.00",
   socials: {
-    github: "https://github.com/soumikchakraborty",
-    linkedin: "https://linkedin.com/in/soumikchakraborty",
-    hackerrank: "https://www.hackerrank.com/profile/soumikchakraborty88s",
-    leetcode: "https://leetcode.com/u/soumikchakraborty/"
+    github: "https://github.com/soumik88s",
+    linkedin: "https://linkedin.com/in/soumik-chakraborty-793647294",
+    hackerrank: "https://www.hackerrank.com/profile/soumikchakrabor5",
+    
   },
   stats: {
-    projectsCompleted: 10,
+    projectsCompleted: 5,
     problemsSolved: 200,
     certifications: 7,
     cgpa: 7.00
@@ -146,8 +146,8 @@ export const PROJECTS: ProjectItem[] = [
       "Cloud Document Upload & Verification System",
       "MongoDB Database with Mongoose Schemas"
     ],
-    liveDemoUrl: "#",
-    githubUrl: "https://github.com/soumikchakraborty",
+    liveDemoUrl: "https://akademi-uni.web.app/",
+    githubUrl: "https://github.com/soumik88s/online-scholarship-management-system",
     featured: true,
     imageBg: "from-blue-600/30 via-indigo-600/20 to-purple-600/30"
   },
@@ -165,8 +165,8 @@ export const PROJECTS: ProjectItem[] = [
       "Live Notification Center for Team Activity",
       "Fully Responsive Modern Dark UI"
     ],
-    liveDemoUrl: "#",
-    githubUrl: "https://github.com/soumikchakraborty",
+    liveDemoUrl: "https://dev-connect-tan.vercel.app/",
+    githubUrl: "https://github.com/soumik88s/devconnect",
     featured: true,
     imageBg: "from-purple-600/30 via-violet-600/20 to-cyan-600/30"
   },
@@ -183,8 +183,8 @@ export const PROJECTS: ProjectItem[] = [
       "Visual Progress Bar & Insight Analytics",
       "Mobile-First Responsive Interface"
     ],
-    liveDemoUrl: "#",
-    githubUrl: "https://github.com/soumikchakraborty",
+    liveDemoUrl: "https://incredible-bubblegum-d420d9.netlify.app/",
+    githubUrl: "https://github.com/soumik88s/cgpa-calculator",
     featured: true,
     imageBg: "from-cyan-600/30 via-teal-600/20 to-blue-600/30"
   }
@@ -225,7 +225,7 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     id: "problems-solved",
     title: "200+ Coding Problems",
     category: "DSA Practice",
-    issuer: "LeetCode & HackerRank",
+    issuer: "HackerRank",
     metric: "200+ Solved",
     description: "Demonstrated strong algorithmic foundations by consistently solving 200+ algorithmic problems across arrays, strings, trees, and graphs.",
     iconName: "BrainCircuit",
@@ -357,10 +357,10 @@ export const CODING_PROFILES: CodingProfile[] = [
   {
     id: "github",
     platform: "GitHub",
-    handle: "@soumikchakraborty",
+    handle: "soumik88s",
     statTitle: "Repositories & Open Source",
-    statValue: "10+ Repos | Active Committer",
-    profileUrl: "https://github.com/soumikchakraborty",
+    statValue: "5+ Repos | Active Committer",
+    profileUrl: "https://github.com/soumik88s",
     iconName: "Github",
     colorGradient: "from-gray-700 to-gray-900 border-slate-700",
     badgeText: "Code Repository"
@@ -371,7 +371,7 @@ export const CODING_PROFILES: CodingProfile[] = [
     handle: "Soumik Chakraborty",
     statTitle: "Professional Network",
     statValue: "500+ Connections",
-    profileUrl: "https://linkedin.com/in/soumikchakraborty",
+    profileUrl: "https://linkedin.com/in/soumik-chakraborty-793647294",
     iconName: "Linkedin",
     colorGradient: "from-blue-700 to-blue-900 border-blue-600/40",
     badgeText: "Connect"
@@ -379,23 +379,13 @@ export const CODING_PROFILES: CodingProfile[] = [
   {
     id: "hackerrank",
     platform: "HackerRank",
-    handle: "soumikchakraborty88s",
+    handle: "soumikchakrabor5",
     statTitle: "Badges & Ratings",
     statValue: "4★ Problem Solving | 4★ SQL",
-    profileUrl: "https://www.hackerrank.com/profile/soumikchakraborty88s",
+    profileUrl: "https://www.hackerrank.com/profile/soumikchakrabor5",
     iconName: "Terminal",
     colorGradient: "from-emerald-700 to-green-900 border-emerald-600/40",
     badgeText: "4-Star Coder"
   },
-  {
-    id: "leetcode",
-    platform: "LeetCode",
-    handle: "soumikchakraborty",
-    statTitle: "Problem Solving",
-    statValue: "200+ Solved Problems",
-    profileUrl: "https://leetcode.com/u/soumikchakraborty/",
-    iconName: "Code",
-    colorGradient: "from-amber-600 to-orange-800 border-amber-600/40",
-    badgeText: "200+ Solved"
-  }
+  
 ];

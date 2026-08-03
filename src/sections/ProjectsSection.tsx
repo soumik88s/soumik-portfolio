@@ -32,12 +32,12 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onOpenCgpaModa
   });
 
   const handleDemoClick = (project: ProjectItem) => {
-    if (project.id === 'cgpa-calculator') {
-      onOpenCgpaModal();
-    } else {
-      setSelectedProject(project);
-    }
-  };
+  if (project.id === "cgpa-calculator") {
+    onOpenCgpaModal();
+  } else {
+    window.open(project.liveDemoUrl, "_blank");
+  }
+};
 
   return (
     <section id="projects" className="py-20 relative bg-slate-900/40">
