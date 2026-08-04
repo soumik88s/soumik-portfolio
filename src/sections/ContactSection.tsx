@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import { useForm } from '@formspree/react';
 import { 
   Mail, 
   Phone, 
@@ -25,6 +26,7 @@ export const ContactSection: React.FC = () => {
     subject: '',
     message: ''
   });
+  const [state, formspreeSubmit] = useForm("xljrrgdk");
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -38,45 +40,50 @@ export const ContactSection: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMessage('');
+  e.preventDefault();
+  setErrorMessage('');
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      setErrorMessage('Please fill in all required fields (Name, Email, and Message).');
-      return;
-    }
+  if (
+    !formData.name.trim() ||
+    !formData.email.trim() ||
+    !formData.message.trim()
+  ) {
+    setErrorMessage(
+      'Please fill in all required fields (Name, Email, and Message).'
+    );
+    return;
+  }
 
-    setLoading(true);
+  setLoading(true);
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+  try {
+    await formspreeSubmit({
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    });
 
-      const data = await response.json();
+    setSubmitted(true);
 
-      if (response.ok && data.success) {
-        setSubmitted(true);
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        
-        // Celebratory Confetti
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
-      } else {
-        setErrorMessage(data.error || 'Failed to send message. Please try again.');
-      }
-    } catch (err) {
-      setErrorMessage('Network error occurred. Please try sending again or reach out directly via email.');
-    } finally {
-      setLoading(false);
-    }
-  };
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
 
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  } catch (error) {
+    setErrorMessage('Failed to send message. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+};
   return (
     <section id="contact" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
